@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
 	
 	catch (std::filesystem::filesystem_error) {
 
-		std::cout << "Could not open images folder" << std::endl;
+		std::cout << "Could not open folder" << std::endl;
 		return 1;
 	}
 
