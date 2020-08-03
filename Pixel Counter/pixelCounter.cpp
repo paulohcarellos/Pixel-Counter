@@ -36,9 +36,10 @@ int main(int argc, char** argv) {
 	for (std::string& it : filePaths) {
 
 		int pixels = getPixels(it);
-		std::cout << it.substr(folderName.length() + 1) << " - " << pixels << "px" << std::endl;
+
+		if (pixels > 0)
+			std::cout << it.substr(folderName.length() + 1) << " - " << pixels << "px" << std::endl;
 	}
-		
 
 	return 0;
 }
