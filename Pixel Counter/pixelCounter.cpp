@@ -49,6 +49,7 @@ int getPixels(std::string filename) {
 	std::vector<unsigned char> image;
 	unsigned w, h;
 
+	//If there's an error with the png file 'error' will be true
 	unsigned error = lodepng::decode(image, w, h, filename);
 
 	if (error) {
